@@ -97,10 +97,10 @@
         Function {
             display-name = "Function";
             bindings = <
-        &sys_reset   &trans  &trans  &to 5   &to 0        &kp F1   &kp F2   &kp F3   &kp F4   &sys_reset
-        &bootloader  &trans  &trans  &trans  &kp F22      &kp F5   &kp F6   &kp F7   &kp F8   &bootloader
-&trans  &trans       &trans  &trans  &trans  &trans       &kp F9   &kp F10  &kp F11  &kp F12  &trans       &trans
-                             &trans  &trans  &kp SPACE    &kp RET  &trans   &trans
+        &trans  &trans  &trans  &to 5   &to 0        &kp F1   &kp F2   &kp F3   &kp F4   &trans
+        &trans  &trans  &trans  &trans  &kp F22      &kp F5   &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp F9   &kp F10  &kp F11  &kp F12  &trans  &trans
+                        &trans  &trans  &kp SPACE    &kp RET  &trans   &trans
             >;
         };
 
@@ -110,7 +110,7 @@
             display-name = "Mod";
             bindings = <
         &kp LC(X)  &kp LC(C)  &kp LC(V)      &trans         &trans           &trans   &trans    &trans  &trans  &trans
-        &kp LGUI   &kp LCTRL  &kp LALT       &kp LSHFT      &trans           &trans   &trans    &trans  &trans  &trans
+        &kp LCTRL  &kp LALT   &kp LGUI       &kp LSHFT      &trans           &trans   &trans    &trans  &trans  &trans
 &trans  &kp LC(Z)  &kp LC(Y)  &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(X))    &trans   &trans    &trans  &trans  &trans  &trans
                               &trans         &kp TAB        &kp SPACE        &kp RET  &kp BSPC  &trans
             >;
