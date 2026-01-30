@@ -17,9 +17,8 @@
 #define Num_Nav  1
 #define Symbol  2
 #define Function  3
-#define Mod 4
-#define Gaming 5
-#define No_Mod 6
+#define Gaming 4
+#define No_Mod 5
 
 &mt {
     quick-tap-ms = <100>;
