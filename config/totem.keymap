@@ -17,11 +17,9 @@
 #define Num_Nav  1
 #define Symbol  2
 #define Function  3
-#define Mod_L 4
-#define Mod_R 5
-#define Gaming 6
-#define Base_noMod 7
-#define Colemak 8
+#define Mod 4
+#define Gaming 5
+#define No_Mod 6
 
 &mt {
     quick-tap-ms = <100>;
