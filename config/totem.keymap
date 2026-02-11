@@ -87,8 +87,8 @@
             bindings = <
         &kp Q        &kp W       &kp F       &kp P         &kp G          &kp J        &kp L         &kp U       &kp Y       &kp SEMI
         &mt LCTRL A  &mt LGUI R  &mt LALT S  &mt LSHIFT T  &kp D          &kp H        &mt RSHIFT N  &mt RALT E  &mt RGUI I  &mt RCTRL O
-&trans  &kp Z        &kp X       &kp C       &kp V         &kp B          &kp K        &kp M         &kp COMMA   &kp DOT     &kp FSLH     &trans
-                                 &trans      &lt 1 TAB     &lt 3 SPACE    &lt 3 ENTER  &lt 2 BSPC    &kp RGUI
+&trans  &kp Z        &kp X       &kp C       &kp V         &kp B          &kp K        &kp M         &kp COMMA   &kp DOT     &kp FSLH     &kp SQT
+                                 &kp DELETE  &lt 1 TAB     &lt 4 SPACE    &lt 3 ENTER  &lt 2 BSPC    &kp RGUI
             >;
         };
 
@@ -97,8 +97,8 @@
             bindings = <
         &trans  &trans  &trans  &trans  &trans       &trans   &kp N7  &kp N8  &kp N9  &trans
         &trans  &trans  &trans  &trans  &trans       &trans   &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans   &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &kp SPACE    &kp RET  &mo 3   &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans   &kp N1  &kp N2  &kp N3  &trans  &to 0
+                        &tog 1  &trans  &kp SPACE    &kp RET  &mo 3   &trans
             >;
         };
 
@@ -107,7 +107,7 @@
             bindings = <
         &trans  &kp AT    &kp HASH       &kp DLLR   &kp PRCNT    &trans        &trans     &kp LPAR  &kp RPAR  &trans
         &trans  &kp EXCL  &kp CARET      &kp AMPS   &kp STAR     &kp MINUS     &kp EQUAL  &kp LBKT  &kp RBKT  &trans
-&trans  &trans  &kp PIPE  &kp BACKSLASH  &kp GRAVE  &kp TILDE    &kp UNDER     &kp PLUS   &kp LBRC  &kp RBRC  &trans  &trans
+&trans  &trans  &kp PIPE  &kp BACKSLASH  &kp GRAVE  &kp TILDE    &kp UNDER     &kp PLUS   &kp LBRC  &kp RBRC  &trans  &to 0
                           &trans         &mo 3      &kp SPACE    &lt 0 RETURN  &trans     &tog 2
             >;
         };
