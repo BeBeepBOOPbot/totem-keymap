@@ -75,6 +75,11 @@
             bindings = <&kp SQT>;
             key-positions = <9 8>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <34 33>;
+        };
     };
 
     keymap {
@@ -85,20 +90,20 @@
         Base {
             display-name = "Base";
             bindings = <
-        &kp Q        &kp W       &kp F       &kp P         &kp G          &kp J        &kp L         &kp U       &kp Y       &kp SEMI
-        &mt LCTRL A  &mt LGUI R  &mt LALT S  &mt LSHIFT T  &kp D          &kp H        &mt RSHIFT N  &mt RALT E  &mt RGUI I  &mt RCTRL O
-&trans  &kp Z        &kp X       &kp C       &kp V         &kp B          &kp K        &kp M         &kp COMMA   &kp DOT     &kp FSLH     &kp SQT
-                                 &kp DELETE  &lt 1 TAB     &lt 4 SPACE    &lt 3 ENTER  &lt 2 BSPC    &kp RGUI
+       &kp Q        &kp W       &kp F       &kp P         &kp G          &kp J        &kp L         &kp U       &kp Y       &kp SEMI
+       &mt LCTRL A  &mt LGUI R  &mt LALT S  &mt LSHIFT T  &kp D          &kp H        &mt RSHIFT N  &mt RALT E  &mt RGUI I  &mt RCTRL O
+&to 6  &kp Z        &kp X       &kp C       &kp V         &kp B          &kp K        &kp M         &kp COMMA   &kp DOT     &kp FSLH     &kp SQT
+                                &kp DELETE  &lt 1 TAB     &lt 4 SPACE    &lt 3 ENTER  &lt 2 BSPC    &kp RGUI
             >;
         };
 
         Num {
             display-name = "Num_Nav";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans       &trans   &kp N7  &kp N8  &kp N9  &trans
-        &trans  &trans  &trans  &trans  &trans       &trans   &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans   &kp N1  &kp N2  &kp N3  &trans  &to 0
-                        &tog 1  &trans  &kp SPACE    &kp RET  &mo 3   &trans
+        &studio_unlock  &kp INS     &kp HOME  &kp PAGE_UP    &kp CAPSLOCK    &trans   &kp N7  &kp N8  &kp N9  &trans
+        &trans          &kp DELETE  &kp END   &kp PAGE_DOWN  &trans          &trans   &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans          &trans      &trans    &trans         &trans          &kp N0   &kp N1  &kp N2  &kp N3  &trans  &to 0
+                                    &tog 1    &trans         &kp SPACE       &kp RET  &mo 3   &trans
             >;
         };
 
@@ -124,20 +129,20 @@
 
         Nav {
             bindings = <
-            &kp         &kp         &kp         &kp         &kp           &kp       &trans    &trans  &trans     &kp
-            &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp
-&kp LSHIFT  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)    &trans    &trans    &trans  &trans     &kp  &kp
-                                    &kp         &kp         &kp           &kp       &kp       &kp
+            &trans      &trans      &trans      &trans      &trans        &trans    &trans    &trans  &trans     &trans
+            &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&kp LSHIFT  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)    &trans    &trans    &trans  &trans     &trans  &to 0
+                                    &trans      &trans      &trans        &trans    &trans    &trans
             >;
         };
 
         Gaming {
             display-name = "Gaming";
             bindings = <
-         &kp ESC    &kp Q  &kp W   &kp E    &kp R        &kp N1   &kp N2    &kp N3  &kp N4  &kp N5
-         &kp LSHFT  &kp A  &kp S   &kp D    &kp F        &kp N6   &kp N7    &kp N8  &kp N9  &kp N0
-&kp TAB  &kp LCTRL  &kp Z  &kp X   &kp C    &kp V        &kp M    &kp I     &kp J   &kp G   &kp T   &kp TILDE
-                           &tog 6  &kp TAB  &kp SPACE    &kp RET  &kp BSPC  &to 0
+         &kp ESC    &kp Q  &kp W   &kp E    &kp R        &kp N1   &kp N2    &kp N3     &kp N4  &kp N5
+         &kp LSHFT  &kp A  &kp S   &kp D    &kp F        &kp N6   &kp N7    &kp N8     &kp N9  &kp N0
+&kp TAB  &kp LCTRL  &kp Z  &kp X   &kp C    &kp V        &kp M    &kp I     &kp J      &kp G   &kp T   &to 0
+                           &tog 6  &kp TAB  &kp SPACE    &kp RET  &kp BSPC  &kp TILDE
             >;
         };
 
@@ -146,8 +151,8 @@
             bindings = <
        &kp Q  &kp W  &kp F   &kp P      &kp G          &kp J        &kp L       &kp U      &kp Y    &kp SEMI
        &kp A  &kp R  &kp S   &kp T      &kp D          &kp H        &kp N       &kp E      &kp I    &kp O
-&mo 0  &kp Z  &kp X  &kp C   &kp V      &kp B          &kp K        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &mo 0
-                     &tog 6  &lt 1 TAB  &lt 3 SPACE    &lt 3 ENTER  &lt 2 BSPC  &to 0
+&to 0  &kp Z  &kp X  &kp C   &kp V      &kp B          &kp K        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &to 0
+                     &tog 6  &lt 1 TAB  &lt 3 SPACE    &lt 3 ENTER  &lt 2 BSPC  &kp RGUI
             >;
         };
 
